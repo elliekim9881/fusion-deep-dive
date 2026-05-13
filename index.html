@@ -175,6 +175,16 @@ section.full { max-width:none; }
 /* ── INSIGHT ── */
 .insight { display:flex; gap:12px; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.08); border-radius:10px; padding:16px 22px; font-size:.94em; color:var(--muted); margin-top:22px; line-height:1.65; }
 
+/* ── REFERENCES ── */
+.ref-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(290px,1fr)); gap:10px; }
+.ref-item { display:flex; gap:14px; align-items:flex-start; background:var(--bg2); border-radius:10px; padding:14px 20px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,.06); transition:all .2s; }
+.ref-item:hover { border-color:rgba(255,255,255,.16); background:rgba(255,255,255,.025); transform:translateY(-1px); }
+.ref-emoji { font-size:1.35em; min-width:28px; text-align:center; flex-shrink:0; padding-top:1px; }
+.ref-title { font-size:.94em; font-weight:700; color:#fff; line-height:1.4; }
+.ref-meta { font-size:.8em; color:var(--muted); margin-top:4px; line-height:1.45; }
+.ref-label { display:flex; align-items:center; gap:8px; font-size:.8em; font-weight:700; letter-spacing:.1em; text-transform:uppercase; margin-bottom:14px; opacity:.8; }
+.ref-bar { display:inline-block; width:22px; height:2px; border-radius:1px; }
+
 /* ── PRACTICE STEPS ── */
 .copy-wrap { position:relative; }
 .copy-btn { position:absolute; top:12px; right:12px; background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.18); color:#fff; padding:6px 16px; border-radius:6px; font-size:.78em; cursor:pointer; transition:all .2s; font-family:inherit; letter-spacing:.02em; z-index:2; }
@@ -655,6 +665,37 @@ section.full { max-width:none; }
     </div>
   </div>
 </section>
+
+<!-- ─── Ch1 참고자료 ─── -->
+<section class="fade" style="min-height:auto; padding-top:0; padding-bottom:52px;">
+  <div class="ref-label" style="color:var(--c1);">
+    <span class="ref-bar" style="background:var(--c1);"></span>
+    Ch1 참고자료 · 더 깊이 파보기
+  </div>
+  <div class="ref-grid">
+    <a href="https://openai.com/blog/chatgpt" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(239,68,68,.18);">
+      <span class="ref-emoji">🌐</span>
+      <div><div class="ref-title">ChatGPT 출시 발표</div><div class="ref-meta">OpenAI 공식 블로그 · 2022.11 · AI 대전환의 시작점 원문</div></div>
+    </a>
+    <a href="https://arxiv.org/abs/2303.08774" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(239,68,68,.18);">
+      <span class="ref-emoji">📄</span>
+      <div><div class="ref-title">GPT-4 Technical Report</div><div class="ref-meta">arXiv · 2023.03 · GPT-4의 능력·한계 공식 분석 논문</div></div>
+    </a>
+    <a href="https://www.anthropic.com/news/model-context-protocol" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(239,68,68,.18);">
+      <span class="ref-emoji">🔌</span>
+      <div><div class="ref-title">Model Context Protocol 발표</div><div class="ref-meta">Anthropic · 2024.11 · AI 도구 연결 표준 MCP 공식 발표</div></div>
+    </a>
+    <a href="https://www.anthropic.com/news/3-5-models-and-computer-use" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(239,68,68,.18);">
+      <span class="ref-emoji">🖥️</span>
+      <div><div class="ref-title">Computer Use 발표</div><div class="ref-meta">Anthropic · 2024.10 · AI가 컴퓨터를 직접 조작하는 시대</div></div>
+    </a>
+    <a href="https://aiindex.stanford.edu/report/" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(239,68,68,.18);">
+      <span class="ref-emoji">📊</span>
+      <div><div class="ref-title">Stanford AI Index Report</div><div class="ref-meta">Stanford HAI · 매년 업데이트 · AI 현황 종합 분석 최고 보고서</div></div>
+    </a>
+  </div>
+</section>
+
 </div>
 
 <hr class="divider">
@@ -1102,6 +1143,37 @@ section.full { max-width:none; }
 
   <div class="insight">💡 <span>AI를 잘 쓰는 사람은 한계를 먼저 안다 — <strong style="color:#fff">틀릴 수 있다는 전제로 검증하며 쓰는 것</strong>이 실력</span></div>
 </section>
+
+<!-- ─── Ch2 참고자료 ─── -->
+<section class="fade" style="min-height:auto; padding-top:0; padding-bottom:52px;">
+  <div class="ref-label" style="color:var(--c2);">
+    <span class="ref-bar" style="background:var(--c2);"></span>
+    Ch2 참고자료 · 더 깊이 파보기
+  </div>
+  <div class="ref-grid">
+    <a href="https://arxiv.org/abs/1706.03762" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(249,115,22,.18);">
+      <span class="ref-emoji">📄</span>
+      <div><div class="ref-title">Attention is All You Need</div><div class="ref-meta">Google Brain · 2017 · Transformer 탄생 — 현대 AI의 원조 논문</div></div>
+    </a>
+    <a href="https://platform.openai.com/tokenizer" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(249,115,22,.18);">
+      <span class="ref-emoji">🔧</span>
+      <div><div class="ref-title">OpenAI Tokenizer (직접 체험)</div><div class="ref-meta">OpenAI · 텍스트 붙여넣기 → 토큰 분리 즉시 확인</div></div>
+    </a>
+    <a href="https://jalammar.github.io/illustrated-transformer/" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(249,115,22,.18);">
+      <span class="ref-emoji">🎨</span>
+      <div><div class="ref-title">The Illustrated Transformer</div><div class="ref-meta">Jay Alammar · 시각화로 이해하는 Transformer — 비전공자 필독</div></div>
+    </a>
+    <a href="https://www.youtube.com/watch?v=aircAruvnKk" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(249,115,22,.18);">
+      <span class="ref-emoji">📺</span>
+      <div><div class="ref-title">But what is a neural network?</div><div class="ref-meta">3Blue1Brown · YouTube · 뉴럴네트워크 시각적 설명 최강 영상</div></div>
+    </a>
+    <a href="https://www.youtube.com/watch?v=kCc8FmEb1nY" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(249,115,22,.18);">
+      <span class="ref-emoji">📺</span>
+      <div><div class="ref-title">Let's build GPT: from scratch</div><div class="ref-meta">Andrej Karpathy · YouTube · 2시간 코딩으로 GPT 직접 구현</div></div>
+    </a>
+  </div>
+</section>
+
 </div>
 
 <hr class="divider">
@@ -1326,6 +1398,41 @@ section.full { max-width:none; }
   </div>
   <div class="insight">💡 <span>결론: 같은 AI 모델이라도 <strong style="color:#fff">어떤 에이전트·하네스로 묶느냐</strong>가 실제 결과를 가른다 → 챕터 6로 이어짐</span></div>
 </section>
+
+<!-- ─── Ch3 참고자료 ─── -->
+<section class="fade" style="min-height:auto; padding-top:0; padding-bottom:52px;">
+  <div class="ref-label" style="color:var(--c3);">
+    <span class="ref-bar" style="background:var(--c3);"></span>
+    Ch3 참고자료 · 더 깊이 파보기
+  </div>
+  <div class="ref-grid">
+    <a href="https://lmarena.ai" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(234,179,8,.18);">
+      <span class="ref-emoji">🏆</span>
+      <div><div class="ref-title">Chatbot Arena (LMSYS)</div><div class="ref-meta">LMSYS · AI 모델 실시간 대결 랭킹 — 직접 입력해서 비교 가능</div></div>
+    </a>
+    <a href="https://arxiv.org/abs/2501.12948" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(234,179,8,.18);">
+      <span class="ref-emoji">📄</span>
+      <div><div class="ref-title">DeepSeek R1 논문</div><div class="ref-meta">DeepSeek · 2025.01 · 600만달러로 만든 추론 모델의 비밀 공개</div></div>
+    </a>
+    <a href="https://aiindex.stanford.edu/report/" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(234,179,8,.18);">
+      <span class="ref-emoji">📊</span>
+      <div><div class="ref-title">Stanford AI Index Report</div><div class="ref-meta">Stanford HAI · AI 경쟁·투자·연구 동향 연간 종합 보고서</div></div>
+    </a>
+    <a href="https://openai.com" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(234,179,8,.18);">
+      <span class="ref-emoji">🌐</span>
+      <div><div class="ref-title">OpenAI 공식 사이트</div><div class="ref-meta">GPT-4o, o3, Sora 등 최신 모델 및 연구 직접 확인</div></div>
+    </a>
+    <a href="https://anthropic.com" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(234,179,8,.18);">
+      <span class="ref-emoji">🌐</span>
+      <div><div class="ref-title">Anthropic 공식 사이트</div><div class="ref-meta">Claude 3.7 등 모델 패밀리 및 AI 안전성 연구</div></div>
+    </a>
+    <a href="https://deepmind.google" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(234,179,8,.18);">
+      <span class="ref-emoji">🌐</span>
+      <div><div class="ref-title">Google DeepMind</div><div class="ref-meta">Gemini 모델 · AlphaCode · AlphaFold 등 연구 현황</div></div>
+    </a>
+  </div>
+</section>
+
 </div>
 
 <hr class="divider">
@@ -1573,6 +1680,33 @@ section.full { max-width:none; }
   </div>
   <div class="insight">💡 <span>AI 도입 성패는 모델이 아니라 <strong style="color:#fff">거버넌스</strong>(정책·검토 프로세스·교육)가 가른다</span></div>
 </section>
+
+<!-- ─── Ch4 참고자료 ─── -->
+<section class="fade" style="min-height:auto; padding-top:0; padding-bottom:52px;">
+  <div class="ref-label" style="color:var(--c4);">
+    <span class="ref-bar" style="background:var(--c4);"></span>
+    Ch4 참고자료 · 더 깊이 파보기
+  </div>
+  <div class="ref-grid">
+    <a href="https://www.mckinsey.com/featured-insights/artificial-intelligence" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(34,197,94,.18);">
+      <span class="ref-emoji">📊</span>
+      <div><div class="ref-title">McKinsey AI 현황 보고서</div><div class="ref-meta">McKinsey · 산업별 AI 생산성·투자·임팩트 글로벌 분석 허브</div></div>
+    </a>
+    <a href="https://www.weforum.org/focus/artificial-intelligence" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(34,197,94,.18);">
+      <span class="ref-emoji">📊</span>
+      <div><div class="ref-title">WEF 미래 직업 보고서</div><div class="ref-meta">World Economic Forum · AI로 인한 직업 변화 · 2년마다 업데이트</div></div>
+    </a>
+    <a href="https://github.com/features/copilot" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(34,197,94,.18);">
+      <span class="ref-emoji">🤖</span>
+      <div><div class="ref-title">GitHub Copilot</div><div class="ref-meta">GitHub · 개발자 생산성 55%↑ 실증 연구 및 사용 가이드 제공</div></div>
+    </a>
+    <a href="https://aiindex.stanford.edu/report/" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(34,197,94,.18);">
+      <span class="ref-emoji">📊</span>
+      <div><div class="ref-title">Stanford AI Index Report</div><div class="ref-meta">Stanford HAI · 직업·경제·사회에 대한 AI 영향 종합 데이터</div></div>
+    </a>
+  </div>
+</section>
+
 </div>
 
 <hr class="divider">
@@ -1778,6 +1912,33 @@ section.full { max-width:none; }
   </div>
   <div class="insight">💡 <span>바이브 코딩은 <strong style="color:#fff">프로토타입·개인 도구에 최강</strong>. 운영 서비스는 여전히 전문가 영역 — 목적에 맞게 구분해 사용</span></div>
 </section>
+
+<!-- ─── Ch5 참고자료 ─── -->
+<section class="fade" style="min-height:auto; padding-top:0; padding-bottom:52px;">
+  <div class="ref-label" style="color:var(--c5);">
+    <span class="ref-bar" style="background:var(--c5);"></span>
+    Ch5 참고자료 · 더 깊이 파보기
+  </div>
+  <div class="ref-grid">
+    <a href="https://platform.openai.com/docs/guides/prompt-engineering" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(59,130,246,.18);">
+      <span class="ref-emoji">📘</span>
+      <div><div class="ref-title">OpenAI 프롬프트 엔지니어링 가이드</div><div class="ref-meta">OpenAI · 공식 프롬프트 작성 모범 사례 6가지 상세 설명</div></div>
+    </a>
+    <a href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(59,130,246,.18);">
+      <span class="ref-emoji">📘</span>
+      <div><div class="ref-title">Anthropic 프롬프트 엔지니어링 가이드</div><div class="ref-meta">Anthropic · Claude 특화 프롬프트 작성법 · 역할/맥락/형식 패턴</div></div>
+    </a>
+    <a href="https://cursor.sh" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(59,130,246,.18);">
+      <span class="ref-emoji">⌨️</span>
+      <div><div class="ref-title">Cursor IDE</div><div class="ref-meta">바이브 코딩의 대표 도구 · AI와 페어 프로그래밍 · 무료 플랜 있음</div></div>
+    </a>
+    <a href="https://claude.ai/code" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(59,130,246,.18);">
+      <span class="ref-emoji">⌨️</span>
+      <div><div class="ref-title">Claude Code</div><div class="ref-meta">Anthropic · 터미널 기반 AI 에이전트 코딩 도구 (이 자료 제작에 사용)</div></div>
+    </a>
+  </div>
+</section>
+
 </div>
 
 <hr class="divider">
@@ -2478,6 +2639,32 @@ section.full { max-width:none; }
 
   <div class="insight" style="margin-top:28px;">
     🚀 <span>첫 하네스를 만든 후 가장 많이 듣는 말: <strong style="color:#fff">"이걸 왜 지금까지 안 했지?"</strong> — 완벽함보다 <em>돌아가는 것</em>부터 시작하세요</span>
+  </div>
+</section>
+
+<!-- ─── Ch6 참고자료 ─── -->
+<section class="fade" style="min-height:auto; padding-top:0; padding-bottom:52px;">
+  <div class="ref-label" style="color:var(--c6);">
+    <span class="ref-bar" style="background:var(--c6);"></span>
+    Ch6 참고자료 · 더 깊이 파보기
+  </div>
+  <div class="ref-grid">
+    <a href="https://www.anthropic.com/research/building-effective-agents" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(168,85,247,.18);">
+      <span class="ref-emoji">📘</span>
+      <div><div class="ref-title">Building Effective Agents</div><div class="ref-meta">Anthropic Research · 에이전트 설계 패턴 공식 가이드 — 필독</div></div>
+    </a>
+    <a href="https://modelcontextprotocol.io" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(168,85,247,.18);">
+      <span class="ref-emoji">🔌</span>
+      <div><div class="ref-title">Model Context Protocol 공식 사이트</div><div class="ref-meta">Anthropic · MCP 스펙 · 사용 가능한 서버 목록 · 구현 가이드</div></div>
+    </a>
+    <a href="https://claude.ai/code" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(168,85,247,.18);">
+      <span class="ref-emoji">🛠️</span>
+      <div><div class="ref-title">Claude Code</div><div class="ref-meta">하네스 엔지니어링 실습 도구 · 오늘 바로 시작 가능 · 무료 플랜</div></div>
+    </a>
+    <a href="https://docs.anthropic.com" class="ref-item" target="_blank" rel="noopener" style="border-color:rgba(168,85,247,.18);">
+      <span class="ref-emoji">📘</span>
+      <div><div class="ref-title">Anthropic 개발자 문서</div><div class="ref-meta">에이전트 구축 · API · 툴 사용 · MCP 연동 가이드 전체</div></div>
+    </a>
   </div>
 </section>
 
